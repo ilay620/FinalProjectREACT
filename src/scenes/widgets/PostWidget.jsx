@@ -45,7 +45,7 @@ const PostWidget = ({
             body: JSON.stringify({ userId: loggedInUserId }),
         });
         const updatedPost = await response.json();
-        dispatch(setPost({ post: updatedPost }))
+        dispatch(setPost({ post: updatedPost }));
     };
 
     const deletePost = async () => {
